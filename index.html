@@ -17,13 +17,14 @@
 	var mynumber=8;
 	var mystring= "Words! :D";
 	var myboolean= true;
-	console.log("mynumber is equal to " + myNumber);
-	console.log("mystring is equal to " + myString);
-	console.log("myboolean is equal to " + myBoolean);
+	console.log("mynumber is equal to " + mynumber);
+	console.log("mystring is equal to " + mystring);
+	console.log("myboolean is equal to " + myboolean);
 	</script>
 
 <h2>Arrays</h2>
 	<script>
+		console.log("Arrays");
 	var myArray = ["What is the meaning of life?", 2, false];
 	console.log(myArray[0]);
 	console.log(myArray[1]);
@@ -32,6 +33,7 @@
 
 <h2>Manipulating Arrays</h2>
 	<script>
+		console.log("Manipulating Arrays");
 var myArray = [true, "Is whater wet?"];
 myArray.push(22);
 myArray.shift();
@@ -42,6 +44,7 @@ console.log(myArray[1]);
 
 <h2>Operators</h2>
 	<script>
+		console.log("Operators");
 var firstName = "Aba";
 var lastName = "Kadabra";
 var myNumber = 88;
@@ -55,6 +58,7 @@ console.log("Water is " + meaningOfLife);
 
 <h2>Conditions</h2>
 	<script>
+		console.log("Conditions");
 function checkNumber(mynumber)
 {
     // TODO: write your code here
@@ -76,6 +80,7 @@ checkNumber(42);
 <h2>Loops</h2>
 
 	<script>
+		console.log("Loops");
 var myArray = ["Is water wet?", "Water is", 88];
 
 //TODO: modify this code
@@ -85,40 +90,70 @@ for (var i = 0; i<myArray.length; i++)
 }
 	</script>
 
-<h2></h2>
+<h2>Objects</h2>
 
 	<script>
+		console.log("Objects");
+var person = {
+    firstSpel : "Abra",
+    lastSpel : "Kadabra",
+    time : 88,
+    evektive : true
+}
 
+console.log(person.firstSpel);
+console.log(person.lastSpel);
+console.log(person.time);
+console.log(person.evektive);
 	</script>
 
-<h2></h2>
+<h2>Functions</h2>
 
 	<script>
-
+		console.log("Functions");
+var multiplyFive = function (number) {
+    return number * 5;
+}
+console.log(multiplyFive(8));
+console.log(multiplyFive(7));
+console.log(multiplyFive(3));
+console.log(multiplyFive(3));
 	</script>
 
-<h2></h2>
+<h2>Pop-up Boxes</h2>
 
 	<script>
-
+		console.log("Pop-up Boxes");
+alert("Hi :)");
 	</script>
 
-<h2></h2>
+<h2>Callbacks</h2>
 
 	<script>
+		console.log("Callbacks");
+function useCallback(callback)
+{
+    callback(1);
+    callback(2);
+    callback(3);
+}
 
+function callback(sentence) {
+    console.log(sentence);
+}
+
+useCallback(callback);
 	</script>
 
-<h2></h2>
+<h2>Arrow Functions</h2>
 
 	<script>
-
-	</script>
-
-<h2></h2>
-
-	<script>
-
+		console.log("Arrow Functions");
+const divideByTwo = number => number / 2;
+console.log(divideByTwo(8));
+console.log(divideByTwo(7));
+console.log(divideByTwo(3));
+console.log(divideByTwo(3));
 	</script>
 
 </body>
